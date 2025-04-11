@@ -1,0 +1,657 @@
+{
+    "general": {
+        "opening": "Seisoen pimeän metsän reunalla, paikassa, jota kaikki pelkäävät, on Ravenwoodin kartano. Se on ollut tyhjillään vuosia, ja siitä liikkuu huhuja kummituksista ja muista oudoista tapahtumista. Useimmat ihmiset välttävät sitä, mutta sinä et ole useimmat ihmiset. Nimesi on Evelyn Grey, ja olet paranormaali tutkija. Eräänä päivänä saat vanhan avaimen ja sen mukana muistiinpanon, jossa lukee: \"Löydä totuus ennen kuin se kuluttaa sinut.\" Joten rohkeutta sydämessäsi päätät astua kartanoon ja selvittää sen salaisuudet.\n\nSaavut kartanolle ja seisot kunnioituksesta mykistyneenä suuren ja vanhanaikaisen rakennuksen edessä. Kartano kohoaa edessäsi, sen tummat ikkunat tuijottavat kuin silmät. Tuuli kuiskaa puiden läpi, ja ilma on täynnä mädän hajua. Hengität syvään ja astut eteenpäin, avain puristettuna tiukasti kädessäsi. Ovi narisee auki, ja astut sisään, pimeyden kietoutuessa ympärillesi kuin vaippa. Seikkailu alkaa..."
+    },
+    "areas": {
+        "frontYard": {
+            "name": "Etupiha",
+            "description": "Olet etupihalla."
+        },
+        "entrance": {
+            "name": "Sisäänkäynti",
+            "description": "Olet kartanon sisäänkäynnillä."
+        },
+        "familyHall": {
+            "name": "Perhehalli",
+            "description": "Tämä on perhehalli."
+        },
+        "westHallwaySouth": {
+            "name": "Läntinen Käytävä Etelä",
+            "description": "Olet läntisessä käytävässä etelässä."
+        },
+        "westHallwayNorth": {
+            "name": "Läntinen Käytävä Pohjoinen",
+            "description": "Olet läntisessä käytävässä pohjoisessa."
+        },
+        "guestLivingRoom": {
+            "name": "Vierasolohuone",
+            "description": "Tämä on vierasolohuone."
+        },
+        "washroom": {
+            "name": "Pesuhuone",
+            "description": "Olet pesuhuoneessa."
+        },
+        "library": {
+            "name": "Kirjasto",
+            "description": "Tämä on kirjasto."
+        },
+        "eastHallwaySouth": {
+            "name": "Itäinen Käytävä Etelä",
+            "description": "Olet itäisessä käytävässä etelässä."
+        },
+        "eastHallwayNorth": {
+            "name": "Itäinen Käytävä Pohjoinen",
+            "description": "Olet itäisessä käytävässä pohjoisessa."
+        },
+        "guestRoom1": {
+            "name": "Vieras Huone 1",
+            "description": "Tämä on vierashuone 1."
+        },
+        "guestRoom2": {
+            "name": "Vieras Huone 2",
+            "description": "Tämä on vierashuone 2."
+        },
+        "kitchen": {
+            "name": "Keittiö",
+            "description": "Olet keittiössä."
+        },
+        "diningRoom": {
+            "name": "Ruokasali",
+            "description": "Tämä on ruokasali."
+        },
+        "mainBasementRoom": {
+            "name": "Pääkellarihuone",
+            "description": "Olet pääkellarihuoneessa."
+        },
+        "basementGuestRoom": {
+            "name": "Kellarin Vierashuone",
+            "description": "Tämä on kellarin vierashuone."
+        },
+        "wineStorage": {
+            "name": "Viinivarasto",
+            "description": "Tämä on viinivarasto."
+        },
+        "washingRoom": {
+            "name": "Pesuhuone",
+            "description": "Tämä on pesuhuone."
+        },
+        "familyPrivateBar": {
+            "name": "Perheen Yksityinen Baari",
+            "description": "Tämä on perheen yksityinen baari."
+        },
+        "hiddenWalkwaySouth": {
+            "name": "Piilotettu Käytävä Etelä",
+            "description": "Olet piilotetussa käytävässä etelässä."
+        },
+        "hiddenWalkwayWest": {
+            "name": "Piilotettu Käytävä Länsi",
+            "description": "Olet piilotetussa käytävässä lännessä."
+        },
+        "hiddenChamber": {
+            "name": "Piilotettu Kammio",
+            "description": "Tämä on piilotettu kammio. Tunneli johtaa ylös kirkkoon."
+        },
+        "centralHallway": {
+            "name": "Keskikäytävä",
+            "description": "Olet keskikäytävässä."
+        },
+        "centralHallwayWashroom": {
+            "name": "Keskikäytävän Pesuhuone",
+            "description": "Tämä on keskikäytävän pesuhuone."
+        },
+        "masterBedroom": {
+            "name": "Päämakuuhuone",
+            "description": "Astut päämakuuhuoneeseen, suureen tilaan, jossa aika tuntuu pysähtyneen. Ilma on täynnä vanhan puun ja haalistuneiden muistojen tuoksua. Koristeellinen sänky hallitsee huonetta, sen kerran ylelliset liinavaatteet ovat nyt pölyn peitossa. Kuunvalo suodattuu raskaitten verhojen läpi, heittäen aavemaisia kuvioita lattialle. Tämä huone kätkee salaisuuksia, joita varjot kuiskaavat tanssiessaan nurkissa."
+        },
+        "masterWashroom": {
+            "name": "Pääpesuhuone",
+            "description": "Tämä on pääpesuhuone."
+        },
+        "servantHallway": {
+            "name": "Palvelijoiden Käytävä",
+            "description": "Olet palvelijoiden käytävässä."
+        },
+        "servantRoom1": {
+            "name": "Palvelijan Huone 1",
+            "description": "Astut palvelijan huoneeseen, jossa ilma on täynnä vanhan puun ja unohtuneiden unelmien tuoksua. Huone on vaatimaton, siinä on yksinkertainen sänky ja pieni ikkuna, josta tulee kuunvaloa. Varjot tanssivat seinillä, kuiskaten salaisuuksia niistä, jotka kerran palvelivat täällä."
+        },
+        "servantRoom2": {
+            "name": "Palvelijan Huone 2",
+            "description": "Astut palvelijan huoneeseen, jossa ilma on täynnä vanhan puun ja unohtuneiden unelmien tuoksua. Huone on vaatimaton, siinä on yksinkertainen sänky ja pieni ikkuna, josta tulee kuunvaloa. Varjot tanssivat seinillä, kuiskaten salaisuuksia niistä, jotka kerran palvelivat täällä."
+        },
+        "northHallway": {
+            "name": "Pohjoinen Käytävä",
+            "description": "Olet pohjoisessa käytävässä. Se on pimeä ja kylmä."
+        },
+        "southHallway": {
+            "name": "Eteläinen Käytävä",
+            "description": "Olet eteläisess�� käytävässä. \"Ha ha ha! Pelataan lisää herra karhua!\". Joka kerta kun kuljet tämän käytävän läpi, kuulet lapsen naurua."
+        },
+        "office": {
+            "name": "Toimisto",
+            "description": "Astut toimistoon, huoneeseen ilman ikkunoita, jossa ilma on täynnä vanhan paperin ja musteen tuoksua. Himmeä valo heittää pitkiä varjoja seinille, ja hiljaisuus on lähes käsinkosketeltavaa. Pölyiset kirjahyllyt täyttävät huoneen, täynnä unohdettua tietoa ja salaisuuksia, jotka odottavat paljastumistaan."
+        },
+        "familyLivingRoom": {
+            "name": "Perheen Olohuone",
+            "description": "Astut perheen olohuoneeseen, tilaan, jossa naurun kaikuja ja salaisuuksien kuiskauksia leijuu ilmassa. Huone on sisustettu vintage-huonekaluilla, jokainen kappale kertoo oman tarinansa. Suuri takka seisoo keskellä, sen liesi on kylmä ja tyhjä, mutta tuntuu siltä, että se on kerran lämmittänyt monia sydämiä. Ilma on täynnä vanhan puun ja haalistuneiden muistojen tuoksua, luoden tunnelman, joka on sekä nostalginen että melankolinen."
+        },
+        "grandparentsRoom": {
+            "name": "Vanhusten Huone",
+            "description": "Olet astunut huoneeseen, joka näyttää kuuluneen vanhukselle. Huone on täysin tyhjä lukuun ottamatta yöpöydällä olevaa kävelykeppiä ja kuihtunutta kukkaa."
+        },
+        "kidsBedroom": {
+            "name": "Annabellen Makuuhuone",
+            "description": "Näet leijuvia leluja, jotka yhtäkkiä putoavat. Astut Annabellen huoneeseen. Hänen nimensä roikkuu ovessa. Huone on täynnä vanhoja leluja ja piirustuksia, jotka kertovat kauan sitten menneestä lapsuudesta. Ilma on täynnä pölyä, ja heikko laventelin tuoksu leijuu ilmassa. Tunnet, että joku tarkkailee sinua, mutta ei ole murhanhimoisia aikeita."
+        },
+        "attic": {
+            "name": "Vintti",
+            "description": "Löydät itsesi vintiltä, unohdetusta valtakunnasta, jossa pöly tanssii valonsäteissä. Vanhojen arkkujen ja hämähäkinseittien peittämät muistoesineet kuiskivat menneiden aikojen salaisuuksia. Ilma on täynnä vanhan puun ja kauan sitten menneiden muistojen tuoksua."
+        },
+        "garden": {
+            "name": "Puutarha",
+            "description": "Löydät itsesi puutarhasta, jossa kuihtuneet kukat kuiskivat tarinoita unohdetuista ajoista. Pieni suihkulähde, vaikka kuiva, seisoo todistuksena menneestä kauneudesta. Villin kasvillisuuden alta paljastuu piilotettu polku, joka johtaa pohjoiseen, merkittynä juhlallisella ristillä."
+        },
+        "church": {
+            "name": "Kirkko",
+            "description": "Olet vanhassa kirkossa. Ilma on täynnä suitsukkeen ja vanhan puun tuoksua. Värilliset lasi-ikkunat heittävät värikkäitä kuvioita kiviseen lattiaan. On portaat, jotka johtavat alas piilotettuun tunneliin."
+        },
+        "hiddenTunnel": {
+            "name": "Piilotettu Tunneli",
+            "description": "Olet pimeässä, kapeassa tunnelissa. Seinät ovat kosteat ja ilma on tunkkainen. Tunneli näyttää jatkuvan loputtomiin pimeyteen."
+        }
+    },
+    "events": {
+        "cleansingGadgetInChurch": {
+            "description": "Asetat puhdistuslaitteen muinaiselle alttarille. Kaaosmainen tuskanhuuto täyttää ilman, kaikuen katumusta ja raivoa. Henget, jotka olivat sidottuja tähän paikkaan, vedetään väistämättä laitteeseen. Räjähtävällä äänellä kirous murtuu, ja syvä hiljaisuus laskeutuu, merkiten kartanon vapautumista. Olet murtanut kirouksen."
+        },
+        "takeBeatItBook": {
+            "description": "Otat 'Beat It' -kirjan."
+        },
+        "cleansingGadgetInAttic": {
+            "description": "Kartano on vapautettu kirouksesta."
+        },
+        "examineDampStainedCoat": {
+            "description": "Tutkit kosteaa tahraista takkia ja löydät kirjaston avaimen."
+        },
+        "enterMansion": {
+            "description": "Työnnät raskaat etuovet auki ja astut Perhehalliin. Pöly peittää koko kartanon kuin et olisi koskaan nähnyt, ja vanha kattokruunu roikkuu yläpuolella, heiluen kevyesti vedossa. Kaksosportaat nousevat kummallakin puolella, ja pimeät käytävät ulottuvat vasemmalle ja oikealle. Silmäsi kiinnittyvät suureen, antiikkipeiliin seinällä. Se heijastaa ei vain kuvaasi, vaan jotain muuta ᅳ varjoisaa hahmoa, joka lymyilee juuri näkökentän ulkopuolella. Yhtäkkiä hahmo astuu eteenpäin, haamumainen hovimestari nimeltä Edmund. Hän ilmestyy melkein tyhjästä, hänen utuisen muotonsa hehkuen himmeästi. \"Tervetuloa,\" hän sanoo pehmeällä, kaikuva äänellä. \"Olet astunut paikkaan, jota vainoavat muutkin kuin pelkät muistot. Varo pahaa henkeä, joka vaeltaa näissä käytävissä. Jos koskaan tunnet sen läsnäolon, tee itsellesi palvelus... piiloudu tai juokse.\"."
+        },
+        "findLantern": {
+            "description": "Vaikka kartano on yleensä tarpeeksi kirkas nähdäksesi, mietit, onko siellä pimeitä huoneita, jotka voisivat tarvita valoa."
+        },
+        "drawOnKitchenCabinet": {
+            "description": "Piirrät puuttuvan osan symbolista keittiön kaappiin. Kaappi avautuu paljastaen kartan ja veitsen."
+        },
+        "findLivingRoomNote": {
+            "description": "Pelaaja astuu olohuoneeseen, siirtäen lattialautaa, joka paljastaa ruosteisen muistiinpanon. Muistiinpano sisältää tietoa kirjaston avaimen sijainnista."
+        },
+        "unlockLibrary": {
+            "description": "Pelaaja löytää kirjaston avaimen kellarin pesukoneesta ja avaa kirjaston jatkaakseen tutkimusta."
+        },
+        "revealHiddenPassage": {
+            "description": "Pelaaja löytää piilotetun käytävän asettamalla 'Beat It' -kirjan tyhjään kirjahyllyyn kirjastossa. Tämä käytävä johtaa alas kellariin."
+        },
+        "findUsbFlashDrive": {
+            "description": "Pelaaja löytää USB-muistitikun piilotettuna päämakuuhuoneen lipastosta. Se sisältää avaimen edistyneen teknologian huoneen avaamiseen."
+        },
+        "activateGenerator": {
+            "description": "Pelaaja löytää ja aktivoi interdimensionaalisen generaattorin kellarissa, käynnistäen Rick Sanchezin hologrammin, joka selittää kartanon kirouksen."
+        },
+        "finalRitual": {
+            "description": "Pelaaja tuo Rickin laitteen kirkon alttarille, käynnistäen viimeisen rituaalin. Pelaaja kutsuu portaalin vangitakseen vaeltavan haamun ja lopettaakseen kirouksen."
+        },
+        "breakCurse": {
+            "description": "Pelaaja suorittaa onnistuneesti viimeisen rituaalin, murtaen Ravenwoodin kartanon kirouksen ja palauttaen rauhan omaisuuteen."
+        },
+        "epiloguePortal": {
+            "description": "Murrettuaan kirouksen ja lähdettyään kartanosta, pieni portaali välkkyy pelaajan takana, vihjaten uudesta interdimensionaalisesta seikkailusta Rickin ja Mortyn kanssa."
+        },
+        "useOrangeVinylRecord": {
+            "description": "Fonografi alkoi soittaa ääntä. \"You better run, you better do what you can Don't wanna see no blood, don't be a macho man You wanna be tough, better do what you can So beat it\". Sanoitukset kaikuvat huoneessa, värähdellen seinistä. \"Beat it... Ehkä tämä tarkoittaa jotain\", ajattelet."
+        }
+    },
+    "groups": {
+        "mansion": {
+            "name": "Kartano",
+            "enter_description": "Astut kartanoon.",
+            "exit_description": "Poistut kartanosta."
+        },
+        "groundFloor": {
+            "name": "Alakerta",
+            "enter_description": "Astut alakertaan.",
+            "exit_description": "Poistut alakerrasta."
+        },
+        "upperFloor": {
+            "name": "Yläkerta",
+            "enter_description": "Astut yläkertaan.",
+            "exit_description": "Poistut yläkerrasta."
+        },
+        "basement": {
+            "name": "Kellari",
+            "enter_description": "Astut kellariin.",
+            "exit_description": "Poistut kellarista."
+        },
+        "attic": {
+            "name": "Vintti",
+            "enter_description": "Astut vintille.",
+            "exit_description": "Poistut vintiltä."
+        },
+        "outside": {
+            "name": "Ulkopuoli",
+            "enter_description": "Olet ulkona.",
+            "exit_description": "Poistut ulkoa."
+        }
+    },
+    "transitionRequirements": {
+        "lockedDoor": {
+            "unfulfilled_description": "Ovi on lukossa.",
+            "fulfilled_description": "Avaat oven."
+        },
+        "lockedMansionDoor": {
+            "unfulfilled_description": "Kartanon ovi seisoo lujana, sen salaisuudet suljettuina.",
+            "fulfilled_description": "Narinalla ja valituksella kartanon ovi antaa periksi, paljastaen sisällään olevat mysteerit."
+        },
+        "lockedLibraryDoor": {
+            "unfulfilled_description": "Kirjaston ovi on lukossa.",
+            "fulfilled_description": "Avaat kirjaston oven."
+        },
+        "lockedGardenDoor": {
+            "unfulfilled_description": "Lasinen ovi puutarhaan on lukossa.",
+            "fulfilled_description": "Avaat lasisen oven puutarhaan."
+        },
+        "lockedBarDoor": {
+            "unfulfilled_description": "Ovi piilotettuun käytävään on lukossa.",
+            "fulfilled_description": "Avaat oven piilotettuun käytävään."
+        },
+        "lockedAtticDoor": {
+            "unfulfilled_description": "Vintin ovi on lukossa. Huomaat aukon, johon voisi sopia kävelykeppi.",
+            "fulfilled_description": "Käytät kävelykeppiä avataksesi vintin oven. Sarja puisia ja narisevia portaita laskeutuu hitaasti."
+        },
+        "hiddenChamberPath": {
+            "unfulfilled_description": "",
+            "fulfilled_description": "Kirjaston kirjahylly liukuu sivuun, paljastaen piilotetun käytävän."
+        }
+    },
+    "items": {
+        "charredRitualJournal": {
+            "name": "Palaneen Rituaalipäiväkirja",
+            "description": "Nahkakantinen päiväkirja, jonka reunat ovat palaneet, sisältäen salaperäisiä kaavioita ja katkelmallisia latinalaisia lauseita. Merkinnät dokumentoivat Elias Blackthornin kokeita. Muste on haalistunut, ja käsiala muuttuu kohti loppua yhä sekavammaksi."
+        },
+        "musicBox": {
+            "name": "Musiikkirasia",
+            "description": "Hopeinen musiikkirasia, jossa on hienoja kaiverruksia. Melodian soittaminen paljastaa Viviennen äänitetyn äänen: “Elias menettää itsensä. Lapset ovat kauhuissaan. On melkein Samhain.”"
+        },
+        "paintedCanvas": {
+            "name": "Maalattu Kangas",
+            "description": "Maalaus surrealistisesta maisemasta, jossa on kaksi aurinkoa ja leijuvia obeliskeja, allekirjoitettu “Annabelle, 12-vuotias.” Maali on halkeillut, ja kankaan reunat ovat rispaantuneet, ikään kuin se olisi säilytetty väärin monta vuotta."
+        },
+        "bloodStainedLetter": {
+            "name": "Veren Tahrima Kirje",
+            "description": "Palvelijan kiireellä kirjoitettu viesti, jossa on suttaantunutta mustetta ja tummia, ruosteisia tahroja. Kirje viittaa “kuuttoman yön tapahtumiin,” kuvaus, joka vastaa Viviennen päiväkirjamerkintää rituaalin ajankohdasta."
+        },
+        "brokenPocketWatch": {
+            "name": "Rikkoutunut Taskukello",
+            "description": "Kultainen taskukello, joka on pysähtynyt aikaan 3:15, kaiverruksella: “Eliakselle, Ajan Mestarille, Uskollisilta Ystäviltäsi.” Mekanismi on ruostunut, mutta maaperän jäljet viittaavat siihen, että se on haudattu tarkoituksella."
+        },
+        "crypticMap": {
+            "name": "Salaperäinen Kartta",
+            "description": "Käsin piirretty kartta kartanosta, jossa on Rickin sotkuista käsialaa. Tahra lukee: “Löysin tämän paikan vuonna ‘84—klassinen kummitusten energiapiste!” Rickin merkinnät ovat sarkastisia ja epäkunnioittavia, kuten aina."
+        },
+        "dampStainedCoat": {
+            "name": "Kostea Tahrainen Takki",
+            "description": "Takki, joka on kostea ja tahrainen. \"Ugh, se on märkä ja haisee homeelle.\", ajattelet."
+        },
+        "laundryNote": {
+            "name": "Tarra",
+            "description": "Siinä lukee \"Herra, olen vienyt takkisi pestäväksi kellariin.\""
+        },
+        "chandelier": {
+            "name": "Kattokruunu",
+            "description": "Vanha kattokruunu roikkuu katosta, heiluen kevyesti vedossa."
+        },
+        "antiqueMirror": {
+            "name": "Antiikkipeili",
+            "description": "Katsot peiliin ja näet varjoisan hahmon lymyilevän juuri näkökentän ulkopuolella. Käännyt ympäri, mutta et löydä mitään. Joku tarkkailee sinua..."
+        },
+        "familyPortrait": {
+            "name": "Perhemuotokuva",
+            "description": "Vanha perhemuotokuva roikkuu seinällä, pölyn peitossa. Tuntuu kuin silmät seuraisivat sinua."
+        },
+        "matchbox": {
+            "name": "Tulitikkurasia",
+            "description": "Tulitikkurasia, jota voidaan käyttää lyhdyn sytyttämiseen"
+        },
+        "mansionDoor": {
+            "name": "Kartanon Ovi",
+            "description": "Kartanon pääovi."
+        },
+        "mansionKey": {
+            "name": "Kartanon Avain",
+            "description": "Avain kartanoon."
+        },
+        "lantern": {
+            "name": "Lyhty",
+            "description": "Vanhanajan käsikäyttöinen lyhty"
+        },
+        "flashlight": {
+            "name": "Taskulamppu",
+            "description": "Taskulamppu, jota voidaan käyttää pimeiden alueiden valaisemiseen"
+        },
+        "note": {
+            "name": "Vanha Pölyinen Muistio",
+            "description": "Varo pahaa henkeä, joka vaeltaa näissä käytävissä. Jos tunnet sen läsnäolon, tee itsellesi palvelus... piiloudu tai juokse."
+        },
+        "libraryKey": {
+            "name": "Kirjaston Avain",
+            "description": "Avain piilotetun kirjaston oveen, joka johtaa piilotettuun kammioon"
+        },
+        "pen": {
+            "name": "Kynä",
+            "description": "Ruokasalista löytynyt kynä"
+        },
+        "hiddenSign": {
+            "name": "Piilotettu Merkki",
+            "description": "Piilotettu, keskeneräinen merkki keittiön kaapissa"
+        },
+        "map": {
+            "name": "Kartta",
+            "description": "Revitty kartta, jossa lukee \"S S W U E\". \"Jos seuraan sitä, saatan löytää jotain tärkeää\", ajattelet."
+        },
+        "usbFlashDrive": {
+            "name": "USB-muistitikku",
+            "description": "USB-muistitikku, joka sisältää vihjeitä seuraavista askelista"
+        },
+        "missingRecord": {
+            "name": "Kadonnut Levy",
+            "description": "Kadonnut levy, jota voidaan käyttää fonografin kanssa"
+        },
+        "unmarkedBook": {
+            "name": "Kirja",
+            "description": "Merkitsemätön kirja, joka olisi"
+        },
+        "cleansingGadget": {
+            "name": "Laite",
+            "description": "Laite, joka näyttää tulleen toisesta maailmasta"
+        },
+        "plaque": {
+            "name": "Laatta",
+            "description": "Laatta, jossa on viesti"
+        },
+        "decoratedKey": {
+            "name": "Koristeltu Avain",
+            "description": "Kauniisti koristeltu avain, jossa on yksityiskohtaisia kuvioita."
+        },
+        "owlEmblem": {
+            "name": "Pöllö Embleemi",
+            "description": "Ruostunut avain, johon on kaiverrettu Blackthornin perheen vaakuna. Pöllön symboli on tummunut, mutta avain on edelleen toimiva. Sivussa on himmeä kaiverrus: “Palautettu Yhdistyksen toimesta, 1912."
+        },
+        "barKey": {
+            "name": "Baarin Avain",
+            "description": "Pieni avain, jossa on lappu 'Baari'."
+        },
+        "mrBear": {
+            "name": "Herra Karhu",
+            "description": "Kulunut nallekarhu, jolta puuttuu yksi silmä. Se näyttää olleen hyvin rakastettu vuosien varrella. Kuuluu hiljainen kuiskaus, \"Älä vie häntä pois taas, herra varas...\". Päätät kunnioittaa sen toivetta ja jättää sen rauhaan."
+        },
+        "walkingStick": {
+            "name": "Kävelykeppi",
+            "description": "Vanha puinen kävelykeppi. Se näyttää tukevasti käytetyltä."
+        },
+        "libraryDocuments": {
+            "name": "Pino asiakirjoja",
+            "description": "Pino tutkimuspapereita, jotka eivät merkitse sinulle mitään. Useimmissa niistä on painettu symboli, joka näyttää kirjaimelta 'B', jota ympäröi ympyrä."
+        },
+        "kitchenCabinet": {
+            "name": "Keittiön Kaappi",
+            "description": "Vanha keittiön kaappi, jossa on symboli, joka näyttää kirjaimelta 'B', jota ympäröi ympyrä, mutta symboli näyttää käsin piirretyltä ja keskeneräiseltä."
+        },
+        "knife": {
+            "name": "Veitsi",
+            "description": "Terävä veitsi, koristeltu monimutkaisilla rituaalisymboleilla. Se sykkii oudolla, toispuoleisella energialla. Ehkä tämä terä voi torjua näitä käytäviä kummittelevia aaveita."
+        },
+        "redVinylRecord": {
+            "name": "Punainen Vinyylilevy",
+            "description": "Punainen vinyylilevy. Se näyttää sisältävän vanhaa musiikkia."
+        },
+        "blueVinylRecord": {
+            "name": "Sininen Vinyylilevy",
+            "description": "Sininen vinyylilevy. Se näyttää sisältävän vanhaa musiikkia."
+        },
+        "greenVinylRecord": {
+            "name": "Vihreä Vinyylilevy",
+            "description": "Vihreä vinyylilevy. Se näyttää sisältävän vanhaa musiikkia."
+        },
+        "orangeVinylRecord": {
+            "name": "Oranssi Vinyylilevy",
+            "description": "Oranssi vinyylilevy. Se näyttää sisältävän vanhaa musiikkia."
+        },
+        "phonograph": {
+            "name": "Fonografi",
+            "description": "Vanha fonografi, joka hyväksyy vinyylilevyjä. Se näyttää toimivan edelleen."
+        },
+        "libraryBookshelf": {
+            "name": "Kirjaston Kirjahylly",
+            "description": "Suuri kirjahylly täynnä pölyisiä vanhoja kirjoja. Joitakin kirjoja, jotka näet, ovat: Ikuisen Liekin Kirjoitus, Varjoisen Laakson Kronikat ja Unohdettujen Kielten Koodit kiinnittävät huomiosi. Niiden vieressä huomaat Alkemiallisen Muuntamisen Taide, Suoraan Taivaaseen, Kaikujen Tuolla Puolen, Nukketalo ja Löytäjän Säilyttäjä. Lähellä olevat teokset, kuten Lyhdynkantajan Opas, Beat It, Muinaisten Rituaalit, Dunner Tekee Sen ja Kaksoisolentojen Peili. Lisätutkimus paljastaa Keskiyön Tanssija, Kaivostoiminnan Sidonta, Salaisen Kastikkeen Keittokirja ja Oppineen Unohdetut Polut. Voit viitata näihin kirjoihin käyttämällä \"<kirjannimi> kirja\"."
+        },
+        "beatItBook": {
+            "name": "Beat It Kirja",
+            "description": "Kirja nimeltä 'Beat It'. Se näyttää olevan tärkeä."
+        },
+        "writOfEternalFlame": {
+            "name": "Ikuisen Liekin Kirjoitus",
+            "description": "Kirja nimeltä 'Ikuisen Liekin Kirjoitus'. Se näyttää olevan muinainen ja tärkeä."
+        },
+        "chroniclesOfTheShadowedVale": {
+            "name": "Varjoisen Laakson Kronikat",
+            "description": "Kirja nimeltä 'Varjoisen Laakson Kronikat'. Se näyttää sisältävän synkkiä salaisuuksia."
+        },
+        "codexOfTheForgottenTongues": {
+            "name": "Unohdettujen Kielten Koodit",
+            "description": "Kirja nimeltä 'Unohdettujen Kielten Koodit'. Se on täynnä outoja symboleja."
+        },
+        "artOfAlchemicalTransmutation": {
+            "name": "Alkemiallisen Muuntamisen Taide",
+            "description": "Kirja nimeltä 'Alkemiallisen Muuntamisen Taide'. Se sisältää alkemiallisia reseptejä."
+        },
+        "straightToHeaven": {
+            "name": "Suoraan Taivaaseen",
+            "description": "Kirja nimeltä 'Suoraan Taivaaseen'. Se näyttää uskonnolliselta tekstiltä."
+        },
+        "echoesBeyondTheRift": {
+            "name": "Kaikujen Tuolla Puolen",
+            "description": "Kirja nimeltä 'Kaikujen Tuolla Puolen'. Se vaikuttaa käsittelevän muita ulottuvuuksia."
+        },
+        "dollHouse": {
+            "name": "Nukketalo",
+            "description": "Kirja nimeltä 'Nukketalo'. Se näyttää kauhutarinalta."
+        },
+        "finderKeeper": {
+            "name": "Löytäjän Säilyttäjä",
+            "description": "Kirja nimeltä 'Löytäjän Säilyttäjä'. Se vaikuttaa olevan mysteerinovelli."
+        },
+        "lanternBearersGuide": {
+            "name": "Lyhdynkantajan Opas",
+            "description": "Kirja nimeltä 'Lyhdynkantajan Opas'. Se näyttää opaskirjalta."
+        },
+        "ritualsOfTheAncients": {
+            "name": "Muinaisten Rituaalit",
+            "description": "Kirja nimeltä 'Muinaisten Rituaalit'. Se sisältää muinaisia rituaaleja."
+        },
+        "dunnerDidIt": {
+            "name": "Dunner Tekee Sen",
+            "description": "Kirja nimeltä 'Dunner Tekee Sen'. Se näyttää olevan salapoliisitarina."
+        },
+        "dopplegangerMirror": {
+            "name": "Kaksoisolentojen Peili",
+            "description": "Kirja nimeltä 'Kaksoisolentojen Peili'. Se vaikuttaa käsittelevän kaksoisolentoja."
+        },
+        "midnightDancer": {
+            "name": "Keskiyön Tanssija",
+            "description": "Kirja nimeltä 'Keskiyön Tanssija'. Se näyttää olevan trilleri."
+        },
+        "bindingOfMining": {
+            "name": "Kaivostoiminnan Sidonta",
+            "description": "Kirja nimeltä 'Kaivostoiminnan Sidonta'. Se sisältää kaivostekniikoita."
+        },
+        "secretSauceCookbook": {
+            "name": "Salaisen Kastikkeen Keittokirja",
+            "description": "Kirja nimeltä 'Salaisen Kastikkeen Keittokirja'. Se sisältää salaisia reseptejä."
+        },
+        "scholarForgottenPaths": {
+            "name": "Oppineen Unohdetut Polut",
+            "description": "Kirja nimeltä 'Oppineen Unohdetut Polut'. Se näyttää tieteelliseltä tekstiltä."
+        },
+        "musicCollection": {
+            "name": "Musiikkikokoelma",
+            "description": "Talon omistaja näyttää välittävän paljon musiikista, ja pienessä lapussa kerrotaan, että vanhaa levysoitinta ja vinyylikokoelmaa säilytetään ullakolla. ”Jotain siellä täytyy olla”, ajattelet."
+        }
+    },
+    "npcs": {
+        "servant": {
+            "name": "Pierre",
+            "dialog": "The lazy servant whispers, \"I remember placing an important item somewhere in the basement, but can't recall exactly where.\""
+        },
+        "injuredServant": {
+            "name": "Elizabeth",
+            "dialog": "The injured servant whispers, \"Shhh, I am scared and hiding from the evil ghosts who hurt me. I can't take this anymore! Please help me kill these evil ghosts by placing the cleansing gadget in the church.\""
+        }
+    },
+    "commands": {
+        "exit": [
+            "poistu",
+            "lopeta",
+            "jätä"
+        ],
+        "clear": [
+            "tyhjennä",
+            "cls"
+        ],
+        "dict": [
+            "sanakirja",
+            "komennot",
+            "kaikki komennot",
+            "listaa kaikki komennot",
+            "listaa komennot",
+            "sanasto",
+            "apua"
+        ],
+        "loc": [
+            "missä olen",
+            "missäolen",
+            "sijainti",
+            "sij"
+        ],
+        "inventory": [
+            "varasto",
+            "esineet",
+            "laukku",
+            "reppu"
+        ],
+        "pass": [
+            "ohita",
+            "odota",
+            "odota tässä",
+            "skippaa"
+        ],
+        "go": [
+            "mene",
+            "mene sinne",
+            "liiku",
+            "matkusta",
+            "matkusta sinne",
+            "kävele",
+            "kävele kohti",
+            "tutki",
+            "juokse"
+        ],
+        "take": [
+            "ota",
+            "tartu",
+            "hanki",
+            "varastoi"
+        ],
+        "examine": [
+            "tutki",
+            "tarkasta",
+            "katso",
+            "näe",
+            "katso tarkasti"
+        ],
+        "use": [
+            "käytä",
+            "hyödynnä",
+            "ota käyttöön"
+        ],
+        "talk": [
+            "puhu",
+            "puhu jollekin",
+            "keskustele",
+            "keskustele jonkun kanssa",
+            "hei",
+            "moi"
+        ],
+        "hide": [
+            "mene piiloon",
+            "piiloudu",
+            "piilossa"
+        ],
+        "throw": [
+            "heitä",
+            "viskaa",
+            "hylkää",
+            "aseta",
+            "jätä"
+        ]
+    },
+    "inputResponses": {
+        "takeDoesNotExist": "%{item} ei ole täällä.",
+        "takeSuccess": "Olet ottanut %{item}.",
+        "takeNotAllowed": "Et voi ottaa %{item}.",
+        "useSuccess": "Käytit %{item}, nyt on kirkkaampaa.",
+        "useFail": "Mitään ei tapahtunut.",
+        "inventoryFail": "Sinulla ei ole %{item} varastossasi.",
+        "commandUnknown": "En ymmärrä sitä.",
+        "commandNotExist": "Komento '%{cmd_group}' ei ole olemassa.",
+        "enemiesAdjacent": "Kuuluu hiljainen kuiskaus %{directions}.",
+        "safeToLeaveHiding": "Pidät sitä turvallisena poistua piilopaikastasi.",
+        "playerHealthZero": "Terveys on nolla. Peli on ohi.",
+        "tooDark": "On liian pimeää nähdäksesi selvästi!",
+        "attackedCanDefend": "Sinua hyökätään! Onneksi sinulla on veitsi puolustautumiseen. Kirjoita nämä sanat nopeasti puolustautuaksesi:",
+        "attackedDefenseMistake": "Teit virheen!",
+        "attackedDefenseTooSlow": "Olit liian hidas!",
+        "attackedDefenseSuccess": "Puolustautuminen onnistui!",
+        "attackedDefenseFailure": "Puolustautuminen epäonnistui!",
+        "attackedRegular": "Sinua hyökättiin!",
+        "hidingSafe": "Olet piilossa ja turvassa.",
+        "waitingInput": "Mitä haluat tehdä?",
+        "thankYou": "Kiitos, että pelasit peliä!",
+        "cannotExamine": "Et voi tutkia sitä.",
+        "cannotHide": "Et voi piiloutua täällä.",
+        "quicklyHide": "Piilouduit nopeasti jonnekin.",
+        "nothingInInventory": "Sinulla ei ole mitään varastossasi.",
+        "noOneToTalkTo": "Täällä ei ole ketään, jolle puhua.",
+        "dontWantToTalk": "%{name} ei halua puhua kanssasi.",
+        "cannotGo": "Et voi mennä %{dir}.",
+        "throwItem": "Jätit %{item} lattialle.",
+        "playerItemList": "Sinulla on %{items}.",
+        "standingStill": "Aika kuluu, kun seisot paikallasi.",
+        "lightDepelted": "Valosi on sammunut.",
+        "enemyAttackPlayerHidden": "Sinua ei löydetty, huh...",
+        "enemyAttackPlayerFound": "Sinut löydettiin ja sinua hyökättiin!",
+        "healthStatus": "Terveytesi on nyt %{health}.",
+        "playerDied": "Kuolit.",
+        "areaListItems": "Näet täällä %{items}.",
+        "areaListExits": "Voit mennä %{exits}.",
+        "areaHidable": "Voit piiloutua tänne.",
+        "dirToDest": "%{dir} %{dest}"
+    },
+    "mechanics": {
+        "selfDefenseWords": [
+            "väistä",
+            "torju",
+            "parry",
+            "puolusta",
+            "viilto"
+        ]
+    }
+}
