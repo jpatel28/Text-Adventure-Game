@@ -1,0 +1,659 @@
+{
+    "general": {
+        "opening": "Standing at the edge of the dark forest, a place feared by all, is Ravenwood Mansion. It has stood vacant for years, with rumors of ghosts and other strange happenings. Most people avoid it, but you are not most people. Your name is Evelyn Grey, and you're a paranormal investigator. One day, you get an old key along with a note that reads, \"Find the truth before it consumes you.\" So, with courage in your heart, you take a decision to enter the mansion and know the secrets inside it. \n\nYou arrived at the mansion, and stood in awe at the sight of the grand and vintage building. The mansion looms before you, its dark windows staring like eyes. The wind whispers through the trees, and the air is thick with the scent of decay. You take a deep breath and step forward, the key clutched tightly in your hand. The door creaks open, and you step inside, the darkness enveloping you like a shroud. The adventure begins..."
+    },
+    "areas": {
+        "frontYard": {
+            "name": "frontYard",
+            "description": "You are at the entrance of frontYard."
+        },
+        "entrance": {
+            "name": "Entrance",
+            "description": "You are at the entrance of the mansion."
+        },
+        "familyHall": {
+            "name": "Family Hall",
+            "description": "This is the family hall."
+        },
+        "westHallwaySouth": {
+            "name": "West Hallway South",
+            "description": "You are in the west hallway south."
+        },
+        "westHallwayNorth": {
+            "name": "West Hallway North",
+            "description": "You are in the west hallway north."
+        },
+        "guestLivingRoom": {
+            "name": "Guest Living Room",
+            "description": "This is the guest living room."
+        },
+        "washroom": {
+            "name": "Washroom",
+            "description": "You are in the washroom."
+        },
+        "library": {
+            "name": "Library",
+            "description": "This is the library."
+        },
+        "eastHallwaySouth": {
+            "name": "East Hallway South",
+            "description": "You are in the east hallway south."
+        },
+        "eastHallwayNorth": {
+            "name": "East Hallway North",
+            "description": "You are in the east hallway north."
+        },
+        "guestRoom1": {
+            "name": "Guest Room 1",
+            "description": "This is guest room 1."
+        },
+        "guestRoom2": {
+            "name": "Guest Room 2",
+            "description": "This is guest room 2."
+        },
+        "kitchen": {
+            "name": "Kitchen",
+            "description": "You are in the kitchen."
+        },
+        "diningRoom": {
+            "name": "Dining Room",
+            "description": "This is the dining room."
+        },
+        "mainBasementRoom": {
+            "name": "Main Basement Room",
+            "description": "You are in the main basement room."
+        },
+        "basementGuestRoom": {
+            "name": "Basement Guest Room",
+            "description": "This is the basement guest room."
+        },
+        "wineStorage": {
+            "name": "Wine Storage",
+            "description": "This is the wine storage."
+        },
+        "washingRoom": {
+            "name": "Washing Room",
+            "description": "This is the washing room."
+        },
+        "familyPrivateBar": {
+            "name": "Family Private Bar",
+            "description": "This is the family private bar."
+        },
+        "hiddenWalkwaySouth": {
+            "name": "Hidden Walkway South",
+            "description": "You are in the hidden walkway south."
+        },
+        "hiddenWalkwayWest": {
+            "name": "Hidden Walkway West",
+            "description": "You are in the hidden walkway west."
+        },
+        "hiddenChamber": {
+            "name": "Hidden Chamber",
+            "description": "This is the hidden chamber. A tunnel leads up to the church."
+        },
+        "centralHallway": {
+            "name": "Central Hallway",
+            "description": "You are in the central hallway."
+        },
+        "centralHallwayWashroom": {
+            "name": "Central Hallway Washroom",
+            "description": "This is the central hallway washroom."
+        },
+        "masterBedroom": {
+            "name": "Master Bedroom",
+            "description": "You step into the master bedroom, a grand space where time seems to stand still. The air is thick with the scent of aged wood and faded memories. An ornate bed dominates the room, its once-luxurious linens now draped in dust. Moonlight filters through heavy curtains, casting ghostly patterns on the floor. This room holds secrets, whispered by the shadows that dance in the corners."
+        },
+        "masterWashroom": {
+            "name": "Master Washroom",
+            "description": "This is the master washroom."
+        },
+        "servantHallway": {
+            "name": "Servant Hallway",
+            "description": "You are in the servant hallway."
+        },
+        "servantRoom1": {
+            "name": "Servant Room 1",
+            "description": "You step into a servant's Room, where the air is thick with the scent of old wood and forgotten dreams. The room is modest, with a simple bed and a small window that lets in a sliver of moonlight. Shadows dance on the walls, whispering secrets of those who once served here."
+        },
+        "servantRoom2": {
+            "name": "Servant Room 2",
+            "description": "You step into a servant's Room, where the air is thick with the scent of old wood and forgotten dreams. The room is modest, with a simple bed and a small window that lets in a sliver of moonlight. Shadows dance on the walls, whispering secrets of those who once served here."
+        },
+        "northHallway": {
+            "name": "North Hallway",
+            "description": "You are in the north hallway. It's dark and cold."
+        },
+        "southHallway": {
+            "name": "South Hallway",
+            "description": "You are in the south hallway. \"Ha ha ha! Let's play more mr. bear!\". Everytime you pass this hallway, you hear a child's laughter."
+        },
+        "office": {
+            "name": "Office",
+            "description": "You step into the office, a room devoid of windows, where the air is thick with the scent of old paper and ink. The dim light casts long shadows on the walls, and the silence is almost palpable. Dusty bookshelves line the room, filled with forgotten knowledge and secrets waiting to be uncovered."
+        },
+        "familyLivingRoom": {
+            "name": "Family Living Room",
+            "description": "You step into the family living room, a space where echoes of laughter and whispers of secrets linger in the air. The room is adorned with vintage furniture, each piece telling a story of its own. A grand fireplace stands at the center, its hearth cold and empty, yet it feels as if it once warmed many hearts. The scent of aged wood and faded memories fills the room, creating an atmosphere both nostalgic and melancholic."
+        },
+        "grandparentsRoom": {
+            "name": "Elder's Room",
+            "description": "You've stepped into what seems to be an elder's room. It seems that the room is completely empty except for a walking stick and withered flower on the nightstand."
+        },
+        "kidsBedroom": {
+            "name": "Annabelle's Bedroom",
+            "description": "You saw flating toys that suddenly dropped. You step into Annabelle's room. Her name is hanging on the door. The room is filled with old toys and drawings, a testament to a childhood long past. The air is thick with dust, and the faint scent of lavender lingers. You feel as if someone is watching you, but there are no murdurous intent."
+        },
+        "attic": {
+            "name": "Attic",
+            "description": "You find yourself in the attic, a forgotten realm where dust dances in the beams of light. Old trunks and cobwebbed relics whisper secrets of yesteryears. The air is thick with the scent of aged wood and memories long past."
+        },
+        "garden": {
+            "name": "Garden",
+            "description": "You find yourself in a garden where withered flowers whisper tales of forgotten times. A small fountain, though dry, stands as a testament to past beauty. Beneath the wild overgrowth, a hidden path reveals itself, leading northward, marked by a solemn cross."
+        },
+        "church": {
+            "name": "Church",
+            "description": "You are in an old church. The air is thick with the scent of incense and aged wood. Stained glass windows cast colorful patterns on the stone floor. There is a staircase leading down to a hidden tunnel."
+        },
+        "hiddenTunnel": {
+            "name": "Hidden Tunnel",
+            "description": "You are in a dark, narrow tunnel. The walls are damp and the air is musty. It seems to stretch endlessly into the darkness."
+        }
+    },
+    "events": {
+        "cleansingGadgetInChurch": {
+            "description": "You place the cleansing gadget upon the ancient altar. A cacophony of anguished screams fills the air, echoing with regret and fury. The spirits, once bound to this place, are drawn inexorably into the device. With a resounding explosion, the curse is shattered, and a profound silence descends, signaling the mansion's liberation. You have broken the curse."
+        },
+        "takeBeatItBook": {
+            "description": "You take the 'Beat It' book."
+        },
+        "cleansingGadgetInAttic": {
+            "description": "The mansion has been freed from the curse."
+        },
+        "examineDampStainedCoat": {
+            "description": "You examine the damp stained coat and find the library key."
+        },
+        "enterMansion": {
+            "description": "You push open the heavy front doors and step into the Family Hall. Dust covers the whole mansion like you have never seen before, and an old chandelier hangs above, gently swaying in the draft. Twin staircases rise on either side, and dark hallways stretch out to the left and right. Your eyes are drawn to a large, antique mirror on the wall. It reflects not just your image, but something else ᅳ a shadowy presence lurking just beyond sight. Suddenly a figure steps forward a ghostly butler named Edmund. He appears almost out of thin air, his hazy form glowing faintly. \"Welcome,\" he says in a soft, echoing voice. \"You've stepped into a place haunted by more than just memories. Beware of the evil spirit that roams these halls. If you ever sense its presence, do yourself a favor... hide or run.\"."
+        },
+        "findLantern": {
+            "description": "While the mansion is generally bright enough to see, you wonder if there are any dark rooms that could use some light."
+        },
+        "drawOnKitchenCabinet": {
+            "description": "You draw the missing part of the symbol on the kitchen cabinet. The cabinet draws open to reveal a map and a knife."
+        },
+        "findLivingRoomNote": {
+            "description": "The player steps into the Living Room, shifting a floorboard that reveals a rusty note. The note contains information about the library key location."
+        },
+        "unlockLibrary": {
+            "description": "The player finds the library key inside the washing machine in the basement and unlocks the library to continue the investigation."
+        },
+        "revealHiddenPassage": {
+            "description": "The player discovers a hidden passage by placing the 'Beat It' book into the empty library shelf. This passage leads down to the basement."
+        },
+        "findUsbFlashDrive": {
+            "description": "The player finds a USB flash drive hidden in the Master Bedroom's dresser. It holds the key to unlocking the advanced technology room."
+        },
+        "activateGenerator": {
+            "description": "The player finds and activates the Interdimensional Generator in the basement, triggering a hologram of Rick Sanchez explaining the mansion’s curse."
+        },
+        "finalRitual": {
+            "description": "The player brings Rick's device to the church altar, triggering the final ritual. The player summons a portal to trap the roaming ghost and end the curse."
+        },
+        "breakCurse": {
+            "description": "The player successfully performs the final ritual, breaking the curse of Ravenwood Mansion and restoring peace to the property."
+        },
+        "epiloguePortal": {
+            "description": "After breaking the curse and leaving the mansion, a small portal flickers behind the player, hinting at a new interdimensional adventure with Rick and Morty."
+        },
+        "useOrangeVinylRecord": {
+            "description": "The phonograph started making a noise. \"You better run, you better do what you can Don't wanna see no blood, don't be a macho man You wanna be tough, better do what you can So beat it\". The lyrics echo throughout the room, reverberating off the walls. \"Beat it... Maybe this means something\", you think."
+        }
+    },
+    "groups": {
+        "mansion": {
+            "name": "Mansion",
+            "enter_description": "You enter the mansion.",
+            "exit_description": "You exit the mansion."
+        },
+        "groundFloor": {
+            "name": "Ground Floor",
+            "enter_description": "You enter the ground floor.",
+            "exit_description": "You exit the ground floor."
+        },
+        "upperFloor": {
+            "name": "Upper Floor",
+            "enter_description": "You enter the upper floor.",
+            "exit_description": "You exit the upper floor."
+        },
+        "basement": {
+            "name": "Basement",
+            "enter_description": "You enter the basement.",
+            "exit_description": "You exit the basement."
+        },
+        "attic": {
+            "name": "Attic",
+            "enter_description": "You enter the attic.",
+            "exit_description": "You exit the attic."
+        },
+        "outside": {
+            "name": "Outside",
+            "enter_description": "You are outside.",
+            "exit_description": "You are leaving the outdoors."
+        }
+    },
+    "transitionRequirements": {
+        "lockedDoor": {
+            "unfulfilled_description": "The door is locked.",
+            "fulfilled_description": "You unlock the door."
+        },
+        "lockedMansionDoor": {
+            "unfulfilled_description": "The mansion door stands resolute, its secrets sealed away.",
+            "fulfilled_description": "With a creak and a groan, the mansion door yields, revealing the mysteries within."
+        },
+        "lockedLibraryDoor": {
+            "unfulfilled_description": "The library door is locked.",
+            "fulfilled_description": "You unlock the library door."
+        },
+        "lockedGardenDoor": {
+            "unfulfilled_description": "The glass door to the garden is locked.",
+            "fulfilled_description": "You unlock the glass door to the garden."
+        },
+        "lockedBarDoor": {
+            "unfulfilled_description": "The door to the hidden walkway is locked.",
+            "fulfilled_description": "You unlock the door to the hidden walkway."
+        },
+        "lockedAtticDoor": {
+            "unfulfilled_description": "The attic door is locked. You notice a slot that looks like it could fit a walking stick.",
+            "fulfilled_description": "You use the walking stick to unlock the attic door. A set of wooden and creaky stairs slowly decends."
+        },
+        "hiddenChamberPath": {
+            "unfulfilled_description": "",
+            "fulfilled_description": "The library bookshelf slides open, revealing a hidden passage."
+        }
+    },
+    "items": {
+        "charredRitualJournal": {
+            "name": "Charred Ritual Journal",
+            "description": "A leather-bound journal, its edges burnt, containing cryptic diagrams and fragmented Latin phrases. The entries document Elias Blackthorn’s experiments. The ink is faded, and the handwriting grows more erratic toward the end."
+        },
+        "musicBox": {
+            "name": "Music Box",
+            "description": "A silver music box with delicate etching. Playing the melody reveals Vivienne’s recorded voice: “Elias is losing himself. The children are terrified. It’s almost Samhain.”"
+        },
+        "paintedCanvas": {
+            "name": "Painted Canvas",
+            "description": "A painting of a surreal landscape with two suns and floating obelisks, signed “Annabelle, Age 12.” The paint is cracked, and the canvas edges are frayed, as if it has been stored improperly for many years."
+        },
+        "bloodStainedLetter": {
+            "name": "Blood-Stained Letter",
+            "description": "A servant's hastily scrawled note, with smeared ink and dark, rusty stains. The letter refers to “the events of the moonless night,” a description aligning with Vivienne’s journal entry about the ritual date."
+        },
+        "brokenPocketWatch": {
+            "name": "Broken Pocket Watch",
+            "description": "A gold pocket watch stuck at 3:15, with an engraving: “To Elias, Master of Time, From Your Loyal Friends.” The mechanism is rusted, but traces of soil suggest it was buried deliberately."
+        },
+        "crypticMap": {
+            "name": "Cryptic Map",
+            "description": "A hand-drawn map of the mansion with notes in Rick’s messy handwriting. A smudge reads: “Found this place in ‘84—classic haunted energy hotspot!” Rick’s notations are sarcastic and irreverent, as always."
+        },
+        "dampStainedCoat": {
+            "name": "Damp Stained Coat",
+            "description": "A coat that is damp and stained. \"Ugh, it's wet and smells like mold.\", you think."
+        },
+        "laundryNote": {
+            "name": "Sticky Note",
+            "description": "It says \"Sir, I've taken your coat to wash it in the basement.\""
+        },
+        "chandelier": {
+            "name": "Chandelier",
+            "description": "An old chandelier hanging from the ceiling, gently swaying in the draft."
+        },
+        "antiqueMirror": {
+            "name": "Antique Mirror",
+            "description": "You look into the mirror and see a shadowy presence lurking just beyond sight. You turned around but found nothing. Someone's watching you..."
+        },
+        "familyPortrait": {
+            "name": "Family Portrait",
+            "description": "An old family portrait hanging on the wall, covered in dust. It feels like the eyes are following you."
+        },
+        "matchbox": {
+            "name": "Matchbox",
+            "description": "A matchbox that can be used to light up the lantern"
+        },
+        "mansionDoor": {
+            "name": "Mansion Door",
+            "description": "The main door of the mansion."
+        },
+        "mansionKey": {
+            "name": "Mansion Key",
+            "description": "A key to the mansion."
+        },
+        "lantern": {
+            "name": "Lantern",
+            "description": "Old-fashioned hand-held lantern"
+        },
+        "flashlight": {
+            "name": "Flashlight",
+            "description": "A flashlight that can be used to illuminate dark areas"
+        },
+        "note": {
+            "name": "Old Dusty Note",
+            "description": "Beware of the evil spirit that roams these halls. If you ever sense its presence, do yourself a favor... hide or run."
+        },
+        "libraryKey": {
+            "name": "Library Key",
+            "description": "A key for the hidden library door that leads to the hidden chamber"
+        },
+        "pen": {
+            "name": "Pen",
+            "description": "A pen found in the Dining room"
+        },
+        "hiddenSign": {
+            "name": "Hidden Sign",
+            "description": "A hidden, incomplete mark on the kitchen cabinet"
+        },
+        "map": {
+            "name": "Map",
+            "description": "A torn map that says \"S S W U E\". \"If I follow it, I may find something important\", you think."
+        },
+        "usbFlashDrive": {
+            "name": "USB Flash Drive",
+            "description": "A USB flash drive that contains clues for next steps "
+        },
+        "missingRecord": {
+            "name": "Missing Record",
+            "description": "A missing Record that can be used with the Phonograph"
+        },
+        "unmarkedBook": {
+            "name": "Book",
+            "description": "An unmarked book that would"
+        },
+        "cleansingGadget": {
+            "name": "Gadget",
+            "description": "A gadget that looks like it came from another world"
+        },
+        "plaque": {
+            "name": "Plaque",
+            "description": "A plaque with a message"
+        },
+        "decoratedKey": {
+            "name": "Decorated Key",
+            "description": "A beautifully decorated key with intricate designs."
+        },
+        "owlEmblem": {
+            "name": "Owl Emblem",
+            "description": "A rusted key engraved with the Blackthorn family crest. The owl symbol is tarnished, but the key remains functional. A faint inscription on the side reads: “Recovered by the Society, 1912."
+        },
+        "barKey": {
+            "name": "Bar Key",
+            "description": "A small key with a tag labeled 'Bar'."
+        },
+        "mrBear": {
+            "name": "Mr. Bear",
+            "description": "A worn-out teddy bear with one eye missing. It looks like it has been well-loved over the years. You hear a faint whisper, \"Please don't take him away again, mr. thief...\". You decided to respect its wish and leave it alone."
+        },
+        "walkingStick": {
+            "name": "Walking Stick",
+            "description": "An old wooden walking stick. It looks sturdy and well-used."
+        },
+        "libraryDocuments": {
+            "name": "Stack of documents",
+            "description": "A stack of research papers that means nothing to you. Most of them have a printed symbol that looks like a letter 'B' with a circle surrounding it."
+        },
+        "kitchenCabinet": {
+            "name": "Kitchen Cabinet",
+            "description": "An old kitchen cabinet with a symbol that looks like a letter 'B' with a circle surrounding it, however the symbol looks hand-drawn incomplete."
+        },
+        "knife": {
+            "name": "Knife",
+            "description": "A sharp knife, adorned with intricate ritual symbols. It pulses with a strange, otherworldly energy. Perhaps this blade can fend off the spectral entities that haunt these halls."
+        },
+        "redVinylRecord": {
+            "name": "Red Vinyl Record",
+            "description": "A red vinyl record. It looks like it contains some old music."
+        },
+        "blueVinylRecord": {
+            "name": "Blue Vinyl Record",
+            "description": "A blue vinyl record. It looks like it contains some old music."
+        },
+        "greenVinylRecord": {
+            "name": "Green Vinyl Record",
+            "description": "A green vinyl record. It looks like it contains some old music."
+        },
+        "orangeVinylRecord": {
+            "name": "Orange Vinyl Record",
+            "description": "An orange vinyl record. It looks like it contains some old music."
+        },
+        "phonograph": {
+            "name": "Phonograph",
+            "description": "An old phonograph that accepts vinyl records. It looks like it still works."
+        },
+        "libraryBookshelf": {
+            "name": "Library Bookshelf",
+            "description": "A large bookshelf filled with dusty old books. Some books you see are: The Writ of Eternal Flame, Chronicles of the Shadowed Vale, and The Codex of the Forgotten Tongues catch your eye. Beside them, you notice The Art of Alchemical Transmutation, Straight to Heaven, Echoes Beyond the Rift, Doll House, and The Finder Keeper. Nearby, volumes like The Lantern Bearer’s Guide, Beat It, Rituals of the Ancients, Dunner Did It, and Doppleganger Mirror. Further exploration reveals Midnight Dancer, The Binding of Mining, Secret Sauce Cookbook, and The Scholar Forgotten Paths. You can refer to these books by \"<bookname> book\"."
+        },
+        "beatItBook": {
+            "name": "Beat It Book",
+            "description": "A book titled 'Beat It'. It looks like it might be important."
+        },
+        "writOfEternalFlame": {
+            "name": "The Writ of Eternal Flame",
+            "description": "A book titled 'The Writ of Eternal Flame'. It looks ancient and important."
+        },
+        "chroniclesOfTheShadowedVale": {
+            "name": "Chronicles of the Shadowed Vale",
+            "description": "A book titled 'Chronicles of the Shadowed Vale'. It seems to contain dark secrets."
+        },
+        "codexOfTheForgottenTongues": {
+            "name": "The Codex of the Forgotten Tongues",
+            "description": "A book titled 'The Codex of the Forgotten Tongues'. It is filled with strange symbols."
+        },
+        "artOfAlchemicalTransmutation": {
+            "name": "The Art of Alchemical Transmutation",
+            "description": "A book titled 'The Art of Alchemical Transmutation'. It contains alchemical recipes."
+        },
+        "straightToHeaven": {
+            "name": "Straight to Heaven",
+            "description": "A book titled 'Straight to Heaven'. It looks like a religious text."
+        },
+        "echoesBeyondTheRift": {
+            "name": "Echoes Beyond the Rift",
+            "description": "A book titled 'Echoes Beyond the Rift'. It seems to be about other dimensions."
+        },
+        "dollHouse": {
+            "name": "Doll House",
+            "description": "A book titled 'Doll House'. It looks like a horror story."
+        },
+        "finderKeeper": {
+            "name": "The Finder Keeper",
+            "description": "A book titled 'The Finder Keeper'. It seems to be a mystery novel."
+        },
+        "lanternBearersGuide": {
+            "name": "The Lantern Bearer’s Guide",
+            "description": "A book titled 'The Lantern Bearer’s Guide'. It looks like a guidebook."
+        },
+        "ritualsOfTheAncients": {
+            "name": "Rituals of the Ancients",
+            "description": "A book titled 'Rituals of the Ancients'. It contains ancient rituals."
+        },
+        "dunnerDidIt": {
+            "name": "Dunner Did It",
+            "description": "A book titled 'Dunner Did It'. It looks like a detective story."
+        },
+        "dopplegangerMirror": {
+            "name": "Doppleganger Mirror",
+            "description": "A book titled 'Doppleganger Mirror'. It seems to be about doppelgangers."
+        },
+        "midnightDancer": {
+            "name": "Midnight Dancer",
+            "description": "A book titled 'Midnight Dancer'. It looks like a thriller."
+        },
+        "bindingOfMining": {
+            "name": "The Binding of Mining",
+            "description": "A book titled 'The Binding of Mining'. It contains mining techniques."
+        },
+        "secretSauceCookbook": {
+            "name": "Secret Sauce Cookbook",
+            "description": "A book titled 'Secret Sauce Cookbook'. It contains secret recipes."
+        },
+        "scholarForgottenPaths": {
+            "name": "The Scholar Forgotten Paths",
+            "description": "A book titled 'The Scholar Forgotten Paths'. It looks like a scholarly text."
+        },
+        "musicCollection": {
+            "name": "Music Collection",
+            "description": "The owner of the house seems to care a lot about music, and a small note says that the old phonograph and vinyl collection is stored in the attic. \"Something must be there\", you think."
+        }
+    },
+    "npcs": {
+        "servant": {
+            "name": "Pierre",
+            "dialog": "The lazy servant whispers, \"I remember placing an important item somewhere in the basement, but can't recall exactly where.\""
+        },
+        "injuredServant": {
+            "name": "Elizabeth",
+            "dialog": "The injured servant whispers, \"Shhh, I am scared and hiding from the evil ghosts who hurt me. I can't take this anymore! Please help me kill these evil ghosts by placing the cleansing gadget in the church.\""
+        }
+    },
+    "commands": {
+        "exit": [
+            "exit",
+            "quit",
+            "leave"
+        ],
+        "clear": [
+            "clear",
+            "cls"
+        ],
+        "dict": [
+            "dictionary",
+            "dict",
+            "all commands",
+            "list all commands",
+            "list commands",
+            "vocabulary",
+            "vocab",
+            "help"
+        ],
+        "loc": [
+            "where am i",
+            "whereami",
+            "location",
+            "loc"
+        ],
+        "inventory": [
+            "inventory",
+            "items",
+            "bag",
+            "backpack"
+        ],
+        "pass": [
+            "pass",
+            "wait",
+            "wait here",
+            "skip"
+        ],
+        "go": [
+            "go",
+            "go to",
+            "move",
+            "travel",
+            "travel to",
+            "walk",
+            "walk towards",
+            "explore",
+            "run"
+        ],
+        "take": [
+            "take",
+            "grab",
+            "get",
+            "store"
+        ],
+        "examine": [
+            "examine",
+            "inspect",
+            "see",
+            "view",
+            "look at"
+        ],
+        "use": [
+            "use",
+            "utilize",
+            "make use of"
+        ],
+        "talk": [
+            "talk",
+            "talk to",
+            "speak",
+            "speak to",
+            "converse to",
+            "hey",
+            "hi"
+        ],
+        "hide": [
+            "go hide",
+            "hide",
+            "hid"
+        ],
+        "throw": [
+            "throw",
+            "toss",
+            "discard",
+            "place",
+            "leave"
+        ]
+    },
+    "inputResponses": {
+        "takeDoesNotExist": "%{item} doesn't exist here.",
+        "takeSuccess": "You took the %{item}.",
+        "takeNotAllowed": "You can't take the %{item}.",
+        "useSuccess": "You used the %{item}, it is now brighter.",
+        "useFail": "Nothing happened.",
+        "inventoryFail": "You don't have a %{item} in your inventory.",
+        "commandUnknown": "I don't understand that.",
+        "commandNotExist": "The command '%{cmd_group}' does not exist.",
+        "enemiesAdjacent": "You hear a faint whisper from the %{directions}.",
+        "safeToLeaveHiding": "You deem it safe to go out of your hiding spot.",
+        "playerHealthZero": "Your health is zero. The game is over.",
+        "tooDark": "It's too dark to see clearly!",
+        "attackedCanDefend": "You are being attacked! Fortunately, you have the knife to defend yourself. Type these words quickly to defend yourself:",
+        "attackedDefenseMistake": "You made a mistake!",
+        "attackedDefenseTooSlow": "You were too slow!",
+        "attackedDefenseSuccess": "You successfully defended yourself!",
+        "attackedDefenseFailure": "You failed to defend yourself!",
+        "attackedRegular": "You were attacked!",
+        "hidingSafe": "You are hiding and safe.",
+        "waitingInput": "What do you want to do?",
+        "thankYou": "Thank you for playing the game!",
+        "cannotExamine": "You can't examine that.",
+        "cannotHide": "You can't hide here.",
+        "quicklyHide": "You quickly hid somewhere.",
+        "nothingInInventory": "You don't have anything in your inventory.",
+        "noOneToTalkTo": "There is no one to talk to.",
+        "dontWantToTalk": "%{name} doesn't want to talk to you.",
+        "cannotGo": "You can't go %{dir}.",
+        "throwItem": "You left the %{item} on the floor.",
+        "playerItemList": "You have %{items}.",
+        "standingStill": "Time flies as you stood still.",
+        "lightDepelted": "Your light has gone out.",
+        "enemyAttackPlayerHidden": "You were not found, phew...",
+        "enemyAttackPlayerFound": "You were found and attacked!",
+        "healthStatus": "Your health is now %{health}.",
+        "playerDied": "You died.",
+        "areaListItems": "You see %{items} here.",
+        "areaListExits": "You can go %{exits}.",
+        "areaHidable": "You can hide here.",
+        "dirToDest": "%{dir} to the %{dest}"
+    },
+    "mechanics": {
+        "selfDefenseWords": [
+            "dodge",
+            "block",
+            "parry",
+            "defend",
+            "slash"
+        ]
+    }
+}

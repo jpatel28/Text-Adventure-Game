@@ -1,0 +1,1747 @@
+{
+    "general": {
+        "player": {
+            "startingState": {
+                "r_area": "entrance",
+                "startingSanity": 100
+            },
+            "hidingSafety": 60
+        },
+        "enemy": {
+            "t_encounterDialog": "enemy.encounterDialog",
+            "damage": 10
+        }
+    },
+    "areas": [
+        {
+            "id": "frontYard",
+            "r_groups": [
+                "outside"
+            ],
+            "t_name": "areas.frontYard.name",
+            "t_enterDescription": "areas.frontYard.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "entrance"
+                }
+            ],
+            "items": [
+                "brokenPocketWatch"
+            ]
+        },
+        {
+            "id": "entrance",
+            "r_groups": [
+                "outside"
+            ],
+            "t_name": "areas.entrance.name",
+            "t_enterDescription": "areas.entrance.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "familyHall",
+                    "requirement": {
+                        "r_transitionRequirement": "lockedMansionDoor",
+                        "stateKey": "entranceDoor"
+                    }
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "frontYard"
+                }
+            ],
+            "items": [
+                "mansionKey",
+                "lantern",
+                "mansionDoor"
+            ]
+        },
+        {
+            "id": "familyHall",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.familyHall.name",
+            "t_enterDescription": "areas.familyHall.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "entrance"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "westHallwaySouth"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "eastHallwaySouth"
+                },
+                {
+                    "c_direction": "up",
+                    "r_pointer": "centralHallway"
+                }
+            ],
+            "items": [
+                "note",
+                "chandelier",
+                "antiqueMirror",
+                "familyPortrait"
+            ]
+        },
+        {
+            "id": "westHallwaySouth",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.westHallwaySouth.name",
+            "t_enterDescription": "areas.westHallwaySouth.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "familyHall"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "guestLivingRoom"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "westHallwayNorth"
+                }
+            ]
+        },
+        {
+            "id": "westHallwayNorth",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.westHallwayNorth.name",
+            "t_enterDescription": "areas.westHallwayNorth.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "westHallwaySouth"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "washroom"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "library",
+                    "requirement": {
+                        "r_transitionRequirement": "lockedLibraryDoor",
+                        "stateKey": "lockedLibraryDoor"
+                    }
+                }
+            ],
+            "items": [
+                "laundryNote"
+            ]
+        },
+        {
+            "id": "guestLivingRoom",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.guestLivingRoom.name",
+            "t_enterDescription": "areas.guestLivingRoom.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "westHallwaySouth"
+                }
+            ]
+        },
+        {
+            "id": "washroom",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.washroom.name",
+            "t_enterDescription": "areas.washroom.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "westHallwayNorth"
+                }
+            ]
+        },
+        {
+            "id": "library",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.library.name",
+            "t_enterDescription": "areas.library.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "westHallwayNorth"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "diningRoom",
+                    "requirement": {
+                        "r_transitionRequirement": "lockedLibraryDoor",
+                        "stateKey": "lockedLibraryDoorEast"
+                    }
+                },
+                {
+                    "c_direction": "down",
+                    "r_pointer": "hiddenChamber",
+                    "requirement": {
+                        "r_transitionRequirement": "hiddenChamberPath",
+                        "stateKey": "hiddenChamber"
+                    }
+                }
+            ],
+            "items": [
+                "libraryDocuments",
+                "libraryBookshelf",
+                "beatItBook",
+                "writOfEternalFlame",
+                "chroniclesOfTheShadowedVale",
+                "codexOfTheForgottenTongues",
+                "artOfAlchemicalTransmutation",
+                "straightToHeaven",
+                "echoesBeyondTheRift",
+                "dollHouse",
+                "finderKeeper",
+                "lanternBearersGuide",
+                "ritualsOfTheAncients",
+                "dunnerDidIt",
+                "dopplegangerMirror",
+                "midnightDancer",
+                "bindingOfMining",
+                "secretSauceCookbook",
+                "scholarForgottenPaths"
+            ]
+        },
+        {
+            "id": "eastHallwaySouth",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.eastHallwaySouth.name",
+            "t_enterDescription": "areas.eastHallwaySouth.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "eastHallwayNorth"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "familyHall"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "guestRoom1"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "guestRoom2"
+                }
+            ]
+        },
+        {
+            "id": "eastHallwayNorth",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.eastHallwayNorth.name",
+            "t_enterDescription": "areas.eastHallwayNorth.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "kitchen"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "eastHallwaySouth"
+                },
+                {
+                    "c_direction": "down",
+                    "r_pointer": "mainBasementRoom"
+                }
+            ]
+        },
+        {
+            "id": "guestRoom1",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.guestRoom1.name",
+            "t_enterDescription": "areas.guestRoom1.description",
+            "requireLight": false,
+            "isHidable": true,
+            "exits": [
+                {
+                    "c_direction": "west",
+                    "r_pointer": "eastHallwaySouth"
+                }
+            ]
+        },
+        {
+            "id": "guestRoom2",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.guestRoom2.name",
+            "t_enterDescription": "areas.guestRoom2.description",
+            "requireLight": false,
+            "isHidable": true,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "eastHallwaySouth"
+                }
+            ]
+        },
+        {
+            "id": "kitchen",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.kitchen.name",
+            "t_enterDescription": "areas.kitchen.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "west",
+                    "r_pointer": "diningRoom"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "eastHallwayNorth"
+                }
+            ],
+            "items": [
+                "flashlight",
+                "kitchenCabinet"
+            ]
+        },
+        {
+            "id": "diningRoom",
+            "r_groups": [
+                "mansion",
+                "groundFloor"
+            ],
+            "t_name": "areas.diningRoom.name",
+            "t_enterDescription": "areas.diningRoom.description",
+            "requireLight": false,
+            "isHidable": true,
+            "exits": [
+                {
+                    "c_direction": "west",
+                    "r_pointer": "library"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "kitchen"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "garden",
+                    "requirement": {
+                        "r_transitionRequirement": "lockedGardenDoor",
+                        "stateKey": "lockedGardenDoor"
+                    }
+                }
+            ],
+            "items": [
+                "pen"
+            ]
+        },
+        {
+            "id": "mainBasementRoom",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.mainBasementRoom.name",
+            "t_enterDescription": "areas.mainBasementRoom.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "up",
+                    "r_pointer": "eastHallwayNorth"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "basementGuestRoom"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "washingRoom"
+                }
+            ]
+        },
+        {
+            "id": "basementGuestRoom",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.basementGuestRoom.name",
+            "t_enterDescription": "areas.basementGuestRoom.description",
+            "requireLight": true,
+            "isHidable": true,
+            "exits": [
+                {
+                    "c_direction": "west",
+                    "r_pointer": "wineStorage"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "familyPrivateBar"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "mainBasementRoom"
+                }
+            ]
+        },
+        {
+            "id": "wineStorage",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.wineStorage.name",
+            "t_enterDescription": "areas.wineStorage.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "basementGuestRoom"
+                }
+            ]
+        },
+        {
+            "id": "washingRoom",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.washingRoom.name",
+            "t_enterDescription": "areas.washingRoom.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "mainBasementRoom"
+                }
+            ],
+            "items": [
+                "dampStainedCoat"
+            ]
+        },
+        {
+            "id": "familyPrivateBar",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.familyPrivateBar.name",
+            "t_enterDescription": "areas.familyPrivateBar.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "west",
+                    "r_pointer": "hiddenWalkwaySouth",
+                    "requirement": {
+                        "r_transitionRequirement": "lockedBarDoor",
+                        "stateKey": "lockedBarDoor"
+                    }
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "basementGuestRoom"
+                }
+            ]
+        },
+        {
+            "id": "hiddenWalkwaySouth",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.hiddenWalkwaySouth.name",
+            "t_enterDescription": "areas.hiddenWalkwaySouth.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "hiddenWalkwayWest"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "familyPrivateBar"
+                }
+            ]
+        },
+        {
+            "id": "hiddenWalkwayWest",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.hiddenWalkwayWest.name",
+            "t_enterDescription": "areas.hiddenWalkwayWest.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "hiddenChamber"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "hiddenWalkwaySouth"
+                }
+            ]
+        },
+        {
+            "id": "hiddenChamber",
+            "r_groups": [
+                "mansion",
+                "basement"
+            ],
+            "t_name": "areas.hiddenChamber.name",
+            "t_enterDescription": "areas.hiddenChamber.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "hiddenWalkwayWest"
+                },
+                {
+                    "c_direction": "up",
+                    "r_pointer": "library"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "hiddenTunnel",
+                    "requirement": {
+                        "r_transitionRequirement": "lockedGlassDoor",
+                        "stateKey": "lockedGlassDoor"
+                    }
+                }
+            ],
+            "items": [
+                "cleansingGadget",
+                "plaque",
+                "charredRitualJournal",
+                "barKey"
+            ]
+        },
+        {
+            "id": "hiddenTunnel",
+            "r_groups": [
+                "basement"
+            ],
+            "t_name": "areas.hiddenTunnel.name",
+            "t_enterDescription": "areas.hiddenTunnel.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "hiddenChamber"
+                },
+                {
+                    "c_direction": "up",
+                    "r_pointer": "church"
+                }
+            ]
+        },
+        {
+            "id": "centralHallway",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.centralHallway.name",
+            "t_enterDescription": "areas.centralHallway.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "northwest",
+                    "r_pointer": "northHallway"
+                },
+                {
+                    "c_direction": "southwest",
+                    "r_pointer": "southHallway"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "centralHallwayWashroom"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "servantHallway"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "masterBedroom"
+                },
+                {
+                    "c_direction": "down",
+                    "r_pointer": "familyHall"
+                }
+            ]
+        },
+        {
+            "id": "centralHallwayWashroom",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.centralHallwayWashroom.name",
+            "t_enterDescription": "areas.centralHallwayWashroom.description",
+            "requireLight": false,
+            "isHidable": true,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "centralHallway"
+                }
+            ]
+        },
+        {
+            "id": "masterBedroom",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.masterBedroom.name",
+            "t_enterDescription": "areas.masterBedroom.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "masterWashroom"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "centralHallway"
+                }
+            ],
+            "items": [
+                "musicBox",
+                "musicCollection"
+            ]
+        },
+        {
+            "id": "masterWashroom",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.masterWashroom.name",
+            "t_enterDescription": "areas.masterWashroom.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "masterBedroom"
+                }
+            ]
+        },
+        {
+            "id": "servantHallway",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.servantHallway.name",
+            "t_enterDescription": "areas.servantHallway.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "servantRoom1"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "servantRoom2"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "centralHallway"
+                }
+            ]
+        },
+        {
+            "id": "servantRoom1",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.servantRoom1.name",
+            "t_enterDescription": "areas.servantRoom1.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "servantHallway"
+                }
+            ]
+        },
+        {
+            "id": "servantRoom2",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.servantRoom2.name",
+            "t_enterDescription": "areas.servantRoom2.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "west",
+                    "r_pointer": "servantHallway"
+                }
+            ],
+            "items": [
+                "bloodStainedLetter"
+            ]
+        },
+        {
+            "id": "northHallway",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.northHallway.name",
+            "t_enterDescription": "areas.northHallway.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "grandparentsRoom"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "office"
+                },
+                {
+                    "c_direction": "east",
+                    "r_pointer": "centralHallway"
+                }
+            ]
+        },
+        {
+            "id": "southHallway",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.southHallway.name",
+            "t_enterDescription": "areas.southHallway.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "centralHallway"
+                },
+                {
+                    "c_direction": "south",
+                    "r_pointer": "kidsBedroom"
+                },
+                {
+                    "c_direction": "west",
+                    "r_pointer": "familyLivingRoom"
+                }
+            ]
+        },
+        {
+            "id": "office",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.office.name",
+            "t_enterDescription": "areas.office.description",
+            "requireLight": true,
+            "isHidable": true,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "northHallway"
+                },
+                {
+                    "c_direction": "up",
+                    "r_pointer": "attic",
+                    "requirement": {
+                        "r_transitionRequirement": "lockedAtticDoor",
+                        "stateKey": "lockedAtticDoor"
+                    }
+                }
+            ],
+            "items": [
+                "decoratedKey",
+                "owlEmblem"
+            ]
+        },
+        {
+            "id": "familyLivingRoom",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.familyLivingRoom.name",
+            "t_enterDescription": "areas.familyLivingRoom.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "east",
+                    "r_pointer": "southHallway"
+                }
+            ]
+        },
+        {
+            "id": "grandparentsRoom",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.grandparentsRoom.name",
+            "t_enterDescription": "areas.grandparentsRoom.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "northHallway"
+                }
+            ],
+            "items": [
+                "walkingStick"
+            ]
+        },
+        {
+            "id": "kidsBedroom",
+            "r_groups": [
+                "mansion",
+                "upperFloor"
+            ],
+            "t_name": "areas.kidsBedroom.name",
+            "t_enterDescription": "areas.kidsBedroom.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "north",
+                    "r_pointer": "southHallway"
+                }
+            ],
+            "items": [
+                "paintedCanvas",
+                "mrBear"
+            ]
+        },
+        {
+            "id": "attic",
+            "r_groups": [
+                "mansion",
+                "attic"
+            ],
+            "t_name": "areas.attic.name",
+            "t_enterDescription": "areas.attic.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "down",
+                    "r_pointer": "office"
+                }
+            ],
+            "items": [
+                "phonograph",
+                "redVinylRecord",
+                "blueVinylRecord",
+                "greenVinylRecord",
+                "orangeVinylRecord"
+            ]
+        },
+        {
+            "id": "garden",
+            "r_groups": [
+                "outside"
+            ],
+            "t_name": "areas.garden.name",
+            "t_enterDescription": "areas.garden.description",
+            "requireLight": false,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "diningRoom"
+                },
+                {
+                    "c_direction": "north",
+                    "r_pointer": "church"
+                }
+            ]
+        },
+        {
+            "id": "church",
+            "r_groups": [
+                "outside"
+            ],
+            "t_name": "areas.church.name",
+            "t_enterDescription": "areas.church.description",
+            "requireLight": true,
+            "isHidable": false,
+            "exits": [
+                {
+                    "c_direction": "south",
+                    "r_pointer": "garden"
+                },
+                {
+                    "c_direction": "down",
+                    "r_pointer": "hiddenTunnel"
+                }
+            ]
+        }
+    ],
+    "events": [
+        {
+            "id": "takeBeatItBook",
+            "trigger": {
+                "type": "take",
+                "data": "beatItBook"
+            },
+            "additional_conditions": [
+                {
+                    "type": "area",
+                    "data": "library"
+                }
+            ],
+            "affects": [
+                {
+                    "type": "dialog",
+                    "data": "events.takeBeatItBook.description"
+                },
+                {
+                    "type": "force_meet_condition_in_current_area",
+                    "data": "down"
+                }
+            ],
+            "once": true
+        },
+        {
+            "id": "enterMansion",
+            "trigger": {
+                "type": "enter",
+                "data": "familyHall"
+            },
+            "additional_conditions": [],
+            "affects": [
+                {
+                    "type": "dialog",
+                    "data": "events.enterMansion.description"
+                }
+            ],
+            "once": true
+        },
+        {
+            "id": "findLantern",
+            "trigger": {
+                "type": "take",
+                "data": "lantern"
+            },
+            "affects": [
+                {
+                    "type": "dialog",
+                    "data": "events.findLantern.description"
+                }
+            ],
+            "once": false
+        },
+        {
+            "id": "examineDampStainedCoat",
+            "trigger": {
+                "type": "examine",
+                "data": "dampStainedCoat"
+            },
+            "affects": [
+                {
+                    "type": "dialog",
+                    "data": "events.examineDampStainedCoat.description"
+                },
+                {
+                    "type": "add_item_to_inventory",
+                    "data": "libraryKey"
+                }
+            ],
+            "once": true
+        },
+        {
+            "id": "drawOnKitchenCabinet",
+            "trigger": {
+                "type": "use",
+                "data": "pen"
+            },
+            "additional_conditions": [
+                {
+                    "type": "area",
+                    "data": "kitchen"
+                }
+            ],
+            "affects": [
+                {
+                    "type": "dialog",
+                    "data": "events.drawOnKitchenCabinet.description"
+                },
+                {
+                    "type": "add_item_to_current_area",
+                    "data": "map"
+                },
+                {
+                    "type": "add_item_to_current_area",
+                    "data": "knife"
+                }
+            ],
+            "once": true
+        },
+        {
+            "id": "cleansingGadgetInChurch",
+            "trigger": {
+                "type": "throw",
+                "data": "cleansingGadget"
+            },
+            "additional_conditions": [
+                {
+                    "type": "area",
+                    "data": "church"
+                }
+            ],
+            "affects": [
+                {
+                    "type": "dialog",
+                    "data": "events.cleansingGadgetInChurch.description"
+                },
+                {
+                    "type": "end_game",
+                    "data": ""
+                }
+            ],
+            "once": true
+        },
+        {
+            "id": "useOrangeVinylRecord",
+            "trigger": {
+                "type": "use",
+                "data": "orangeVinylRecord"
+            },
+            "additional_conditions": [
+                {
+                    "type": "area",
+                    "data": "attic"
+                }
+            ],
+            "affects": [
+                {
+                    "type": "dialog",
+                    "data": "events.useOrangeVinylRecord.description"
+                }
+            ],
+            "once": false
+        }
+    ],
+    "groups": [
+        {
+            "id": "mansion",
+            "t_name": "groups.mansion.name",
+            "t_enterDescription": "groups.mansion.enter_description",
+            "t_exitDescription": "groups.mansion.exit_description"
+        },
+        {
+            "id": "groundFloor",
+            "t_name": "groups.groundFloor.name",
+            "t_enterDescription": "groups.groundFloor.enter_description",
+            "t_exitDescription": "groups.groundFloor.exit_description"
+        },
+        {
+            "id": "upperFloor",
+            "t_name": "groups.upperFloor.name",
+            "t_enterDescription": "groups.upperFloor.enter_description",
+            "t_exitDescription": "groups.upperFloor.exit_description"
+        },
+        {
+            "id": "basement",
+            "t_name": "groups.basement.name",
+            "t_enterDescription": "groups.basement.enter_description",
+            "t_exitDescription": "groups.basement.exit_description"
+        },
+        {
+            "id": "attic",
+            "t_name": "groups.attic.name",
+            "t_enterDescription": "groups.attic.enter_description",
+            "t_exitDescription": "groups.attic.exit_description"
+        },
+        {
+            "id": "outside",
+            "t_name": "groups.outside.name",
+            "t_enterDescription": "groups.outside.enter_description",
+            "t_exitDescription": "groups.outside.exit_description"
+        }
+    ],
+    "transitionRequirements": [
+        {
+            "id": "lockedMansionDoor",
+            "interactions": [
+                {
+                    "r_command": "examine",
+                    "t_response": "transitionRequirements.lockedMansionDoor.examine"
+                }
+            ],
+            "fulfillCondition": {
+                "r_items": [
+                    "mansionKey"
+                ]
+            },
+            "t_unfulfilled_description": "transitionRequirements.lockedMansionDoor.unfulfilled_description",
+            "t_fulfilled_description": "transitionRequirements.lockedMansionDoor.fulfilled_description"
+        },
+        {
+            "id": "lockedLibraryDoor",
+            "interactions": [
+                {
+                    "r_command": "examine",
+                    "t_response": "transitionRequirements.lockedLibraryDoor.examine"
+                }
+            ],
+            "fulfillCondition": {
+                "r_items": [
+                    "libraryKey"
+                ]
+            },
+            "t_unfulfilled_description": "transitionRequirements.lockedLibraryDoor.unfulfilled_description",
+            "t_fulfilled_description": "transitionRequirements.lockedLibraryDoor.fulfilled_description"
+        },
+        {
+            "id": "hiddenChamberPath",
+            "interactions": [
+                {
+                    "r_command": "examine",
+                    "t_response": "transitionRequirements.hiddenChamberPath.examine"
+                }
+            ],
+            "fulfillCondition": {
+                "r_items": [
+                    "hiddenSign"
+                ]
+            },
+            "t_unfulfilled_description": "transitionRequirements.hiddenChamberPath.unfulfilled_description",
+            "t_fulfilled_description": "transitionRequirements.hiddenChamberPath.fulfilled_description",
+            "isHiddenWhenUnfulfilled": true
+        },
+        {
+            "id": "lockedGardenDoor",
+            "interactions": [
+                {
+                    "r_command": "examine",
+                    "t_response": "transitionRequirements.lockedGardenDoor.examine"
+                }
+            ],
+            "fulfillCondition": {
+                "r_items": [
+                    "decoratedKey"
+                ]
+            },
+            "t_unfulfilled_description": "transitionRequirements.lockedGardenDoor.unfulfilled_description",
+            "t_fulfilled_description": "transitionRequirements.lockedGardenDoor.fulfilled_description"
+        },
+        {
+            "id": "lockedBarDoor",
+            "interactions": [
+                {
+                    "r_command": "examine",
+                    "t_response": "transitionRequirements.lockedBarDoor.examine"
+                }
+            ],
+            "fulfillCondition": {
+                "r_items": [
+                    "barKey"
+                ]
+            },
+            "t_unfulfilled_description": "transitionRequirements.lockedBarDoor.unfulfilled_description",
+            "t_fulfilled_description": "transitionRequirements.lockedBarDoor.fulfilled_description"
+        },
+        {
+            "id": "lockedAtticDoor",
+            "interactions": [
+                {
+                    "r_command": "examine",
+                    "t_response": "transitionRequirements.lockedAtticDoor.examine"
+                }
+            ],
+            "fulfillCondition": {
+                "r_items": [
+                    "walkingStick"
+                ]
+            },
+            "t_unfulfilled_description": "transitionRequirements.lockedAtticDoor.unfulfilled_description",
+            "t_fulfilled_description": "transitionRequirements.lockedAtticDoor.fulfilled_description"
+        },
+        {
+            "id": "lockedGlassDoor",
+            "interactions": [
+                {
+                    "r_command": "examine",
+                    "t_response": "The glass door is locked. You need a key to unlock it."
+                }
+            ],
+            "fulfillCondition": {
+                "r_items": [
+                    "decoratedKey"
+                ]
+            },
+            "t_unfulfilled_description": "The glass door is locked.",
+            "t_fulfilled_description": "You unlock the glass door with the decorated key."
+        }
+    ],
+    "items": [
+        {
+            "id": "charredRitualJournal",
+            "t_name": "items.charredRitualJournal.name",
+            "t_description": "items.charredRitualJournal.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "musicBox",
+            "t_name": "items.musicBox.name",
+            "t_description": "items.musicBox.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "musicCollection",
+            "t_name": "items.musicCollection.name",
+            "t_description": "items.musicCollection.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "paintedCanvas",
+            "t_name": "items.paintedCanvas.name",
+            "t_description": "items.paintedCanvas.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "bloodStainedLetter",
+            "t_name": "items.bloodStainedLetter.name",
+            "t_description": "items.bloodStainedLetter.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "brokenPocketWatch",
+            "t_name": "items.brokenPocketWatch.name",
+            "t_description": "items.brokenPocketWatch.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "crypticMap",
+            "t_name": "items.crypticMap.name",
+            "t_description": "items.crypticMap.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "dampStainedCoat",
+            "t_name": "items.dampStainedCoat.name",
+            "t_description": "items.dampStainedCoat.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "laundryNote",
+            "t_name": "items.laundryNote.name",
+            "t_description": "items.laundryNote.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "chandelier",
+            "t_name": "items.chandelier.name",
+            "t_description": "items.chandelier.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "antiqueMirror",
+            "t_name": "items.antiqueMirror.name",
+            "t_description": "items.antiqueMirror.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "familyPortrait",
+            "t_name": "items.familyPortrait.name",
+            "t_description": "items.familyPortrait.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "matchbox",
+            "t_name": "items.matchbox.name",
+            "t_description": "items.matchbox.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "mansionDoor",
+            "t_name": "items.mansionDoor.name",
+            "t_description": "items.mansionDoor.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "mansionKey",
+            "t_name": "items.mansionKey.name",
+            "t_description": "items.mansionKey.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "lantern",
+            "t_name": "items.lantern.name",
+            "t_description": "items.lantern.description",
+            "isLightItem": true,
+            "lightCount": 5,
+            "isInventoryItem": true
+        },
+        {
+            "id": "flashlight",
+            "t_name": "items.flashlight.name",
+            "t_description": "items.flashlight.description",
+            "isLightItem": true,
+            "lightCount": 15,
+            "isInventoryItem": true
+        },
+        {
+            "id": "note",
+            "t_name": "items.note.name",
+            "t_description": "items.note.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "libraryKey",
+            "t_name": "items.libraryKey.name",
+            "t_description": "items.libraryKey.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "pen",
+            "t_name": "items.pen.name",
+            "t_description": "items.pen.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "hiddenSign",
+            "t_name": "items.hiddenSign.name",
+            "t_description": "items.hiddenSign.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "map",
+            "t_name": "items.map.name",
+            "t_description": "items.map.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "usbFlashDrive",
+            "t_name": "items.usbFlashDrive.name",
+            "t_description": "items.usbFlashDrive.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "phonograph",
+            "t_name": "items.phonograph.name",
+            "t_description": "items.phonograph.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "missingRecord",
+            "t_name": "items.missingRecord.name",
+            "t_description": "items.missingRecord.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "unmarkedBook",
+            "t_name": "items.unmarkedBook.name",
+            "t_description": "items.unmarkedBook.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "cleansingGadget",
+            "t_name": "items.cleansingGadget.name",
+            "t_description": "items.cleansingGadget.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "plaque",
+            "t_name": "items.plaque.name",
+            "t_description": "items.plaque.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "decoratedKey",
+            "t_name": "items.decoratedKey.name",
+            "t_description": "items.decoratedKey.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "owlEmblem",
+            "t_name": "items.owlEmblem.name",
+            "t_description": "items.owlEmblem.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "barKey",
+            "t_name": "items.barKey.name",
+            "t_description": "items.barKey.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "mrBear",
+            "t_name": "items.mrBear.name",
+            "t_description": "items.mrBear.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "walkingStick",
+            "t_name": "items.walkingStick.name",
+            "t_description": "items.walkingStick.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "libraryDocuments",
+            "t_name": "items.libraryDocuments.name",
+            "t_description": "items.libraryDocuments.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "kitchenCabinet",
+            "t_name": "items.kitchenCabinet.name",
+            "t_description": "items.kitchenCabinet.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "knife",
+            "t_name": "items.knife.name",
+            "t_description": "items.knife.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "redVinylRecord",
+            "t_name": "items.redVinylRecord.name",
+            "t_description": "items.redVinylRecord.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "blueVinylRecord",
+            "t_name": "items.blueVinylRecord.name",
+            "t_description": "items.blueVinylRecord.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "greenVinylRecord",
+            "t_name": "items.greenVinylRecord.name",
+            "t_description": "items.greenVinylRecord.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "orangeVinylRecord",
+            "t_name": "items.orangeVinylRecord.name",
+            "t_description": "items.orangeVinylRecord.description",
+            "isLightItem": false,
+            "isInventoryItem": true
+        },
+        {
+            "id": "libraryBookshelf",
+            "t_name": "items.libraryBookshelf.name",
+            "t_description": "items.libraryBookshelf.description",
+            "isLightItem": false,
+            "isInventoryItem": false
+        },
+        {
+            "id": "beatItBook",
+            "t_name": "items.beatItBook.name",
+            "t_description": "items.beatItBook.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "writOfEternalFlame",
+            "t_name": "items.writOfEternalFlame.name",
+            "t_description": "items.writOfEternalFlame.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "chroniclesOfTheShadowedVale",
+            "t_name": "items.chroniclesOfTheShadowedVale.name",
+            "t_description": "items.chroniclesOfTheShadowedVale.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "codexOfTheForgottenTongues",
+            "t_name": "items.codexOfTheForgottenTongues.name",
+            "t_description": "items.codexOfTheForgottenTongues.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "artOfAlchemicalTransmutation",
+            "t_name": "items.artOfAlchemicalTransmutation.name",
+            "t_description": "items.artOfAlchemicalTransmutation.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "straightToHeaven",
+            "t_name": "items.straightToHeaven.name",
+            "t_description": "items.straightToHeaven.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "echoesBeyondTheRift",
+            "t_name": "items.echoesBeyondTheRift.name",
+            "t_description": "items.echoesBeyondTheRift.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "dollHouse",
+            "t_name": "items.dollHouse.name",
+            "t_description": "items.dollHouse.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "finderKeeper",
+            "t_name": "items.finderKeeper.name",
+            "t_description": "items.finderKeeper.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "lanternBearersGuide",
+            "t_name": "items.lanternBearersGuide.name",
+            "t_description": "items.lanternBearersGuide.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "ritualsOfTheAncients",
+            "t_name": "items.ritualsOfTheAncients.name",
+            "t_description": "items.ritualsOfTheAncients.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "dunnerDidIt",
+            "t_name": "items.dunnerDidIt.name",
+            "t_description": "items.dunnerDidIt.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "dopplegangerMirror",
+            "t_name": "items.dopplegangerMirror.name",
+            "t_description": "items.dopplegangerMirror.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "midnightDancer",
+            "t_name": "items.midnightDancer.name",
+            "t_description": "items.midnightDancer.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "bindingOfMining",
+            "t_name": "items.bindingOfMining.name",
+            "t_description": "items.bindingOfMining.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "secretSauceCookbook",
+            "t_name": "items.secretSauceCookbook.name",
+            "t_description": "items.secretSauceCookbook.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        },
+        {
+            "id": "scholarForgottenPaths",
+            "t_name": "items.scholarForgottenPaths.name",
+            "t_description": "items.scholarForgottenPaths.description",
+            "isLightItem": false,
+            "isInventoryItem": true,
+            "isHidden": true
+        }
+    ],
+    "npcs": [
+        {
+            "id": "familyHallGhost",
+            "t_name": "npcs.familyHallGhost.name",
+            "t_dialog": "npcs.familyHallGhost.dialog",
+            "r_area": "familyHall"
+        },
+        {
+            "id": "servant",
+            "t_name": "npcs.servant.name",
+            "t_dialog": "npcs.servant.dialog",
+            "r_area": "servantRoom1"
+        },
+        {
+            "id": "injuredServant",
+            "t_name": "npcs.injuredServant.name",
+            "t_dialog": "npcs.injuredServant.dialog",
+            "r_area": "hiddenWalkwaySouth"
+        }
+    ],
+    "enemies": [
+        {
+            "id": "mansion_ghost",
+            "damage": 30,
+            "damageWithLight": 20,
+            "r_roaming_group": "mansion"
+        },
+        {
+            "id": "frenzy_ghost",
+            "damage": 30,
+            "damageWithLight": 20,
+            "r_roaming_group": "basement"
+        }
+    ],
+    "commands": [
+        {
+            "id": "go",
+            "t_vocabularyList": "commands.go"
+        },
+        {
+            "id": "take",
+            "t_vocabularyList": "commands.take"
+        },
+        {
+            "id": "examine",
+            "t_vocabularyList": "commands.examine"
+        },
+        {
+            "id": "use",
+            "t_vocabularyList": "commands.use"
+        },
+        {
+            "id": "talk",
+            "t_vocabularyList": "commands.talk"
+        },
+        {
+            "id": "hide",
+            "t_vocabularyList": "commands.hide"
+        },
+        {
+            "id": "throw",
+            "t_vocabularyList": "commands.throw"
+        }
+    ]
+}
